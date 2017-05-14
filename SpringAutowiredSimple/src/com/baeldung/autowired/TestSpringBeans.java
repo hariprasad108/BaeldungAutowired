@@ -1,7 +1,6 @@
 package com.baeldung.autowired;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -25,23 +24,26 @@ public class TestSpringBeans {
 
     @Test
     public void givenWiredAttibuteAndConstructorParam_whenAreNotIdentical_thenSuccess() {
-        assertTrue(tb.getAttr()
-            .getSimpleBean() != tb.getCons()
-                .getSimpleBean());
+        assertNotEquals(tb.getAttr()
+            .tukTukBean(""),
+            tb.getCons()
+                .tukTukBean(""));
     }
 
     @Test
     public void givenConstructorParamAndSetterMethodParam_whenAreNotIdentical_thenSuccess() {
-        assertTrue(tb.getCons()
-            .getSimpleBean() != tb.getSetter()
-                .getSimpleBean());
+        assertNotEquals(tb.getCons()
+            .tukTukBean(""),
+            tb.getSetter()
+                .tukTukBean(""));
     }
 
     @Test
     public void givenWiredAttibuteAndSetterMethodParam_whenAreNotIdentical_thenSuccess() {
-        assertTrue(tb.getAttr()
-            .getSimpleBean() != tb.getSetter()
-                .getSimpleBean());
+        assertNotEquals(tb.getAttr()
+            .tukTukBean(""),
+            tb.getSetter()
+                .tukTukBean(""));
     }
 
     protected void finalize() {
