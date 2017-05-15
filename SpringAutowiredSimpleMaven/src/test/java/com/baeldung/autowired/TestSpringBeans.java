@@ -24,30 +24,23 @@ public class TestSpringBeans {
 
     @Test
     public void givenWiredAttibuteAndConstructorParam_whenAreNotIdentical_thenSuccess() {
-        assertNotEquals(tb.getAttr()
-            .tukTukBean(),
-            tb.getCons()
-                .tukTukBean());
+        assertNotEquals(tb.getAttr().tukTukBean(), tb.getCons().tukTukBean());
     }
 
     @Test
     public void givenConstructorParamAndSetterMethodParam_whenAreNotIdentical_thenSuccess() {
-        assertNotEquals(tb.getCons()
-            .tukTukBean(),
-            tb.getSetter()
-                .tukTukBean());
+        assertNotEquals(tb.getCons().tukTukBean(), tb.getSetter().tukTukBean());
     }
 
     @Test
     public void givenWiredAttibuteAndSetterMethodParam_whenAreNotIdentical_thenSuccess() {
-        assertNotEquals(tb.getAttr()
-            .tukTukBean(),
-            tb.getSetter()
-                .tukTukBean());
+        assertNotEquals(tb.getAttr().tukTukBean(), tb.getSetter().tukTukBean());
     }
 
     protected void finalize() {
-        tb.close();
+        if (tb != null) {
+            tb.close();
+        }
     }
 
 }

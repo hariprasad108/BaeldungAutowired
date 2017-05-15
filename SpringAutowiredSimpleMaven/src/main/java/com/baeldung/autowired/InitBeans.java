@@ -48,5 +48,6 @@ public class InitBeans {
         System.out.println(tb.getAttr().tukTukBean());
         System.out.println(tb.getCons().tukTukBean());
         System.out.println(tb.getSetter().tukTukBean());
+        tb.close();
     }
 }
