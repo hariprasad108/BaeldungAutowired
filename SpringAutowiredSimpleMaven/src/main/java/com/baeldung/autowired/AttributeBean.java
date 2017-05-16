@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class AttributeBean {
 
+    // attribute for SimpleBean injection
     @Autowired
-    private
-    SimpleBean simpleBean;
-    
+    private SimpleBean simpleBean;
+
     public String tukTukBean() {
         return simpleBean.ping();
     }

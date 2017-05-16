@@ -8,6 +8,7 @@ public class ConstructorParamBean {
 
     SimpleBean simpleBean;
 
+    // constructor for SimpleBean injection
     @Autowired
     private ConstructorParamBean(SimpleBean simpleBean) {
         this.simpleBean = simpleBean;

@@ -7,7 +7,8 @@ import org.springframework.stereotype.Component;
 public class SetterMethodBean {
     SimpleBean simpleBean;
 
-    @Autowired
+    // setter for SimpleBean injection
+    @Autowired 
     public void setFirstBean(SimpleBean simpleBean) {
         this.simpleBean = simpleBean;
     }
