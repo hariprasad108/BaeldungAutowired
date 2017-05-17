@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class TestSpringBeans {
+public class TestDifferentTypesBeanInjection {
     InitBeans tb = new InitBeans();
 
     @Test
