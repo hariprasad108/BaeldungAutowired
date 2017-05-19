@@ -1,8 +1,10 @@
-package com.baeldung.autowired;
+package com.baeldung.test.beaninjectionautowired;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import com.baeldung.beaninjectionautowired.InitBeans;
 
 public class TestDifferentTypesBeanInjection {
     InitBeans tb = new InitBeans();
