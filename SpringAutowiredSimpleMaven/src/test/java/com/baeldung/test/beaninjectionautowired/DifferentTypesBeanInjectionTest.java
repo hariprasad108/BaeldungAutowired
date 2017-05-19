@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import com.baeldung.beaninjectionautowired.InitBeans;
 
-public class TestDifferentTypesBeanInjection {
+public class DifferentTypesBeanInjectionTest {
     InitBeans tb = new InitBeans();
 
     @Test
