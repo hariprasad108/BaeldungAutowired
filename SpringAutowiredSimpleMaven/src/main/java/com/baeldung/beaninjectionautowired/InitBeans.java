@@ -2,6 +2,10 @@ package com.baeldung.beaninjectionautowired;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.baeldung.components.AttributeBean;
+import com.baeldung.components.ConstructorParamBean;
+import com.baeldung.components.SetterMethodBean;
+
 public class InitBeans {
 
     AnnotationConfigApplicationContext ctx;

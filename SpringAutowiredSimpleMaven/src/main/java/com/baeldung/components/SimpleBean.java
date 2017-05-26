@@ -1,4 +1,4 @@
-package com.baeldung.beaninjectionautowired;
+package com.baeldung.components;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
